@@ -1,0 +1,60 @@
+.flecha {
+    width: 100%;
+}
+
+.logo {
+    width: 140px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.bienvenida {
+    p, h3 {
+        margin: 0px;
+    }
+
+    p {
+        color: gray;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+
+    p {
+        color: gray;
+        margin-left: 10px;
+    }
+}
+
+.textbox-label {
+    margin: 0px 0px 7px 0px;
+}
+
+.textbox {
+    margin: 2px 0px;
+    box-shadow: 2px 2px 5px #cacaca;
+    transition: linear 0.2s;
+
+    ion-icon {
+        margin-right: 12px;
+        color: gray;
+    }
+
+    input {
+        background: none;
+        border: none;
+        color: black;
+        width: 100%;
+        height: 100%;
+    }
+
+    input[type=text], input[type=password]:focus {
+        outline: none;
+    }
+}
+
+.textbox:hover {
+    box-shadow: 2px 2px 5px gray;
+}
