@@ -1,20 +1,64 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!-- contenedor de barra lateral -->
+<ion-router-outlet main></ion-router-outlet>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+<!-- barra lateral -->
+<ion-menu side="start">
+
+  <!-- encabezado de barra lateral -->
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Mas opciones</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <!-- contenido de barra lateral -->
+  <ion-content>
+
+    <ion-list>
+
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>Opcion 1</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="call" slot="start"></ion-icon>
+        <ion-label>Opcion 2</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="star" slot="start"></ion-icon>
+        <ion-label>Opcion 3</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="settings" slot="start"></ion-icon>
+        <ion-label>Opcion 4</ion-label>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+<!-- encabezado de la pagina -->
+<ion-header>
+  <ion-toolbar color="primary">
+      
+    <!-- boton de barra lateral -->
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Barra lateral</ion-title>
+    
+    <!-- imagen de usuario -->
+    <ion-buttons slot="end">
+      <ion-avatar style="width: 40px; height: 40px;">
+        <img src="../../assets/img/user.jpg">
+      </ion-avatar>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
