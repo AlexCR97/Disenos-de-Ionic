@@ -1,0 +1,92 @@
+<ion-content>
+
+  <!-- segments normales -->
+  <div>
+    <h4 class="ion-margin">Segments normales</h4>
+
+    <ion-segment>
+      <ion-segment-button>
+        <ion-label>Inicio</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>Explora</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>Mi perfil</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <!-- segments con scroll -->
+  <div>
+    <h4 class="ion-margin">Segments con scroll</h4>
+
+    <ion-segment scrollable>
+      <ion-segment-button>
+        <ion-icon name="home"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-icon name="heart"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-icon name="pin"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-icon name="star"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-icon name="call"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-icon name="basket"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <!-- segments con ngSwitch-->
+  <div>
+    <h4 class="ion-margin">Segments con *ngSwitch</h4>
+
+    <ion-segment [(ngModel)]="segmentId">
+      <ion-segment-button value="inicio">
+        <ion-icon name="home"></ion-icon>
+        <ion-label class="ion-text-capitalize">Inicio</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="explora">
+        <ion-icon name="compass"></ion-icon>
+        <ion-label class="ion-text-capitalize">Explora</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="miPerfil">
+        <ion-icon name="person"></ion-icon>
+        <ion-label class="ion-text-capitalize">Mi Perfil</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <!-- contenidos de segment -->
+    <div [ngSwitch]="segmentId" class="ion-padding-horizontal">
+
+      <!-- segment inicio -->
+      <div *ngSwitchCase="'inicio'">
+        <h5>Este es el contenido del segment "Inicio"</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque repellendus vero, distinctio quia quisquam asperiores facilis, obcaecati aliquam fuga voluptatem quae placeat dignissimos ea consequatur saepe ex nobis atque nam.</p>
+      </div>
+
+      <!-- segment explora -->
+      <div *ngSwitchCase="'explora'">
+        <h5>Este es el contenido del segment "Explora"</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus obcaecati alias fugiat quam quae ratione doloremque provident delectus recusandae assumenda. Vel provident sed sunt temporibus quae doloribus. Harum, commodi fugiat?</p>
+      </div>
+
+      <div *ngSwitchCase="'miPerfil'">
+        <h5>Este es el contenido del segment "Mi Perfil"</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum saepe inventore ipsum similique quia? Mollitia temporibus beatae ducimus dignissimos eaque, fugit quod nihil dicta excepturi vitae doloribus, earum aspernatur!</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>
