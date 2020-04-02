@@ -1,20 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <div class="banner">
+
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <!-- boton izquierdo -->
+      <ion-buttons slot="start">
+        <ion-button>
+          <ion-icon color="light" name="settings" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-title class="ion-text-center">Mi App</ion-title>
+  
+      <!-- boton derecho -->
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon color="light" name="notifications" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+    </ion-toolbar>
+
+    <div class="ion-padding">
+      <p class="banner-text">¡Bienvenido Usuario!</p>
+      <h1 class="banner-text">¿En que te podemos ayudar?</h1>
+    </div>
+
+    <!-- espacio extra -->
+    <br>
+
   </div>
+
+  <div class="contenedor-principal ion-padding">
+
+    <h5>Este es el resto del contenido</h5>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dolores eos dolorem eveniet dolor facilis modi sint quidem. Inventore vel reiciendis debitis odit molestiae eum dignissimos consequuntur vitae dolorem voluptate?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque itaque fugiat earum nulla placeat nam harum illum consequatur repudiandae, fugit quis saepe veniam neque, magnam voluptatum voluptas voluptatem expedita officia!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus atque eaque assumenda. Distinctio repudiandae delectus doloribus voluptatibus animi laborum repellat quasi recusandae, ipsum, quas blanditiis numquam molestiae! Dicta, totam voluptas!</p>
+    
+  </div>
+
 </ion-content>
