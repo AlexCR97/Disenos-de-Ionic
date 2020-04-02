@@ -1,0 +1,40 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    margin-bottom: 8px;
+
+    h4, p {
+        margin: 0;
+    }
+}
+
+.scroll-horizontal {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+}
+
+.scroll-horizontal-item {
+    flex: none;
+}
+
+.scroll-horizontal-item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.red-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+
+    img {
+        height: 50px;
+    }
+
+    p {
+        margin: 8px 0px 0px 0px;
+    }
+}
