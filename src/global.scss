@@ -24,3 +24,21 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.ion-color-naranjoso {
+    --ion-color-base: var(--ion-color-naranjoso);
+    --ion-color-base-rgb: var(--ion-color-naranjoso-rgb);
+    --ion-color-contrast: var(--ion-color-naranjoso-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-naranjoso-contrast-rgb);
+    --ion-color-shade: var(--ion-color-naranjoso-shade);
+    --ion-color-tint: var(--ion-color-naranjoso-tint);
+}
+
+.ion-color-barney {
+    --ion-color-base: var(--ion-color-barney);
+    --ion-color-base-rgb: var(--ion-color-barney-rgb);
+    --ion-color-contrast: var(--ion-color-barney-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-barney-contrast-rgb);
+    --ion-color-shade: var(--ion-color-barney-shade);
+    --ion-color-tint: var(--ion-color-barney-tint);
+}

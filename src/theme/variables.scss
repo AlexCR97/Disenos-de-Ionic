@@ -1,8 +1,38 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+/*
+Para crear nuevos colores entrar a la siguiente pagina
+en la seccion "New Color Creator".
+
+https://ionicframework.com/docs/theming/colors
+
+Todos los colores tienen que tener un formato especifico,
+y la pagina antes mencionada ayuda a generarlo.
+
+Una vez generado el nuevo color, se agrega en este archivo
+y tambien en el archivo global.scss
+*/
+
 /** Ionic CSS Variables **/
 :root {
+
+  /** naranjoso **/
+  --ion-color-naranjoso: #f09f33;
+  --ion-color-naranjoso-rgb: 240,159,51;
+  --ion-color-naranjoso-contrast: #000000;
+  --ion-color-naranjoso-contrast-rgb: 0,0,0;
+  --ion-color-naranjoso-shade: #d38c2d;
+  --ion-color-naranjoso-tint: #f2a947;
+
+  /** barney **/
+  --ion-color-barney: #df03f8;
+  --ion-color-barney-rgb: 223,3,248;
+  --ion-color-barney-contrast: #ffffff;
+  --ion-color-barney-contrast-rgb: 255,255,255;
+  --ion-color-barney-shade: #c403da;
+  --ion-color-barney-tint: #e21cf9;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
